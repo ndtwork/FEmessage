@@ -8,6 +8,7 @@ const MessageInput: React.FC<MessageInputProps> = ({ onSendMessage }) => {
     const [messageText, setMessageText] = useState('');
 
     const handleSendMessage = () => {
+        console.log('Sending message:', messageText);
         if (messageText.trim()) {
             onSendMessage(messageText);
             setMessageText('');
