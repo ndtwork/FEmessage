@@ -101,7 +101,7 @@ const ChatPage: React.FC = () => {
     );
     console.log("chatromid", chatRoomId, "+", userId, "+", stompClient);
     if (!chatRoomId || !userId) return;
-
+ 
     try {
       const messagePayload = {
         senderUserId: userId,
